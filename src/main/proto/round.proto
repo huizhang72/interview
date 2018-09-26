@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+option java_package = "com.db.interview";
+
+option java_outer_classname = "RoundProtos";
+
+message Round {
+  optional string greeting = 1;
+}

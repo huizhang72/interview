@@ -50,7 +50,10 @@ add_jackson(DEPS)
 # Build the app
 springboot(
     name = "interview",
-    boot_app_class = "com.db.interview.DemoApplication",
+    boot_app_class = "com.db.interview.InterviewApplication",
     resources = glob(["src/main/resources/**"]),
-    deps = DEPS,
+    deps = DEPS + [
+         "//src/main/proto:candidate_java_proto",
+         "//src/main/proto:round_java_proto",
+    ],
 )

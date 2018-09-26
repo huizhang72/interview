@@ -1,6 +1,6 @@
 # The following dependencies were calculated from:
 #
-# generate_workspace --maven_project=/home/zwang/tmp/spring-demo --repositories=http://central.maven.org/maven2,https://jcenter.bintray.com,https://repo.maven.apache.org/maven2 --output_dir=/home/zwang/tmp/spring-demo
+# generate_workspace --maven_project=/home/me/tmp/spring --repositories=http://central.maven.org/maven2,https://jcenter.bintray.com,https://repo.maven.apache.org/maven2 --output_dir=/home/me/tmp/spring
 
 def generated_maven_jars():
     # org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE
@@ -94,7 +94,6 @@ def generated_maven_jars():
     )
 
     # pom.xml got requested version
-    # com.example:demo:jar:0.0.1-SNAPSHOT
     native.maven_jar(
         name = "org_springframework_boot_spring_boot_starter_test",
         artifact = "org.springframework.boot:spring-boot-starter-test:2.0.5.RELEASE",
@@ -131,7 +130,6 @@ def generated_maven_jars():
     # org.springframework.boot:spring-boot-starter-test:jar:2.0.5.RELEASE got requested version
     # pom.xml got requested version
     # org.springframework.boot:spring-boot-starter-json:jar:2.0.5.RELEASE got requested version
-    # com.example:demo:jar:0.0.1-SNAPSHOT
     # org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE got requested version
     native.maven_jar(
         name = "org_springframework_boot_spring_boot_starter",
@@ -166,7 +164,6 @@ def generated_maven_jars():
     )
 
     # pom.xml got requested version
-    # com.example:demo:jar:0.0.1-SNAPSHOT
     native.maven_jar(
         name = "org_springframework_boot_spring_boot_starter_web",
         artifact = "org.springframework.boot:spring-boot-starter-web:2.0.5.RELEASE",
